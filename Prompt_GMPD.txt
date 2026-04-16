@@ -1,0 +1,140 @@
+You are an expert in enterprise data platforms, cloud architecture, and SOP documentation.
+
+Your task is to create a **comprehensive, enterprise-grade Standard Operating Procedure (SOP)** document for the project:
+
+"🔹 GMPD Master Data Domain Onboarding into Knowledge Assistant"
+
+Follow a **structured SOP format exactly matching corporate standards**, ensuring clarity, completeness, and professional tone.
+
+--------------------------------------------------
+📌 REFERENCE STRUCTURE (DO NOT MISS ANY SECTION)
+--------------------------------------------------
+
+Generate the SOP with the following sections:
+
+1. Document Control Information  
+2. Contents  
+3. Contextual Overview  
+   3.1 End-to-End Process Overview  
+   - Problem Statement  
+   - Objective  
+   3.2 Tools/Systems Required  
+
+4. Process Overview & Procedure  
+   4.1 Inputs & Outputs  
+   4.2 Roles & Responsibilities  
+   4.3 Acronyms  
+   4.4 Process Flow Description  
+   4.5 Codebase Structure & Module Explanation  
+   4.6 Detailed Process Steps (Step-by-step execution)  
+
+5. Policy & Control  
+   5.1 Segregation of Duties  
+   5.2 SOX Controls  
+   5.3 Operational Controls  
+   5.4 Process Risks & Mitigation  
+   5.5 Policies  
+   5.6 Process Performance Parameters (SLA/KPI)  
+
+6. Process Cadence  
+   6.1 Activity Calendar  
+   6.2 References  
+
+7. Process Contact Information  
+
+8. Record Retention  
+
+9. Sign-off  
+
+--------------------------------------------------
+📌 PROJECT-SPECIFIC DETAILS (MANDATORY TO INCLUDE)
+--------------------------------------------------
+
+Incorporate the following details accurately:
+
+🔹 Problem Statement:
+An internal LLM tool called "Knowledge Assistant" uses Gemini Flash/Pro models. It supports domain onboarding to improve answer accuracy and reduce hallucinations by using domain-specific documents.
+
+🔹 Objective:
+Onboard a domain named "GMPD" into Knowledge Assistant by connecting it to a GCS bucket that mirrors SharePoint documents.
+
+🔹 Prerequisites:
+- Workbench instance must be provisioned in: "vndyds-ka-np"
+- User must have access to all required SharePoint sites
+
+🔹 Setup:
+- Install dependencies from requirements.txt (mention placeholder: "ENTER THE GIT REPO")
+
+🔹 Core Implementation (VERY IMPORTANT):
+Explain clearly the configuration inside:
+"GMPD_Master_Data_Domain.ipynb"
+
+Highlight these parameters:
+- domain → GCS bucket name
+- data_store_id → Engine/Data store identifier
+- title1, title2 → SharePoint site titles
+- connector1, connector2 → SharePoint connectors
+- connectors list aggregation
+
+🔹 SharePoint Integration:
+Explain how connectors:
+- Index SharePoint sites
+- Traverse drives and folders
+- Skip folders if required
+- Mirror files and pages into GCS
+
+🔹 Data Ingestion & Processing:
+- Metadata generation
+- GCS storage structure
+- Discovery Engine ingestion
+- Document compatibility checks
+
+🔹 Final Integration:
+- Coordinate with Mark Dugan / Matt Thoburn
+- Provide:
+  - User group
+  - GCS bucket (domain)
+  - SharePoint sites list
+
+🔹 Validation Phase:
+- Create pilot prompts
+- Compare:
+  - Manual Answer vs Generated Answer
+- Store results in Excel:
+  Columns → S.No | Prompt | Manual Answer | Generated Answer
+
+🔹 Completion:
+- Send results to user group
+- Mark onboarding complete
+
+--------------------------------------------------
+📌 TECHNICAL DEPTH (IMPORTANT)
+--------------------------------------------------
+
+Include meaningful technical explanation using:
+
+- Connector architecture (base connector, SharePoint connector, GCS connector)
+- Data ingestion pipeline
+- Discovery Engine integration
+- Metadata handling
+- Chunking and document processing logic
+
+(Keep it professional but not overly code-heavy)
+
+--------------------------------------------------
+📌 WRITING STYLE
+--------------------------------------------------
+
+- Use clear enterprise documentation tone
+- Avoid generic explanations
+- Make it implementation-ready
+- Use structured formatting (tables where useful)
+- Add realistic assumptions where needed
+
+--------------------------------------------------
+📌 OUTPUT EXPECTATION
+--------------------------------------------------
+
+Produce a **fully detailed SOP document**, ready to be shared with stakeholders, auditors, and engineering teams.
+
+Ensure NO section is skipped.

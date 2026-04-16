@@ -1,0 +1,41 @@
+** Take enough time and go through the below pointers for project "GMPD Master Data Domain" and provide me a brilliant prompt to generate standard operating procedure (SOP) document **
+
+1) I have attached SOP document for project "ITA" for you reference. Go through the SOP document and provide me brilliant content for each header (DO NOT MISS ANY HEADER)
+
+2) The problem statement for project GMPD:
+
+We have internal LLM tool called the "knowledge assistant" which leverages the potential of Gemini flash / Pro to answer the questions related to business. Inside the knowledge assistant, we have the option to onboard a domain and we can have domain specific reference documents and answer the questions related to particular domain with more accuracy. and reduce hallucinations.
+
+3) The objective:
+
+The objective of the project is to onboard a domain called the "GMPD" into knowledge assistant and connect the domain to a GCS bucket inside which we mirror documents from share point sites related to GMPD.
+
+4) Before we start we need to have an workbench instance onboarded for the user (person) who is going to do the activity into  "vndyds-ka-np"
+
+5) Once instance granted, Check if you have access for all the share point sites that we are trying to mirror documents.
+
+6) Install libraries as specified in requirements.txt from git repo:
+
+"I WILL PROVIDE THIS. FOR NOW LEAVE IT WITH WORDS SAYING "ENTER THE GIT REPO""
+
+7) I have attached only the important code modules for your reference (we have many) In the attached modules, the file "GMPD_Master_Data_Domain.ipynb" is the main and only one python file we make changes.
+
+8) In the python file we actually have 5 major parameters which we change and I have explained them below:
+
+** domain: GCS bucket name. A domain name inside which we mirror all the share point folders and documents
+** data_store_id: ID mainly for engine ID (for proper naming)
+** title1, title2,... etc = Title of the share point site (Usually comes after "/sites/")
+** connector1, connector2,... etc = connectors to connect to share point sites, index each folders (and skip folders if necessary), sub      	folders and documents, filter drives if necessary, mirror drive files & finally mirror site pages
+** add connectors to the list = [connector1, connector2, connector3, connector4]
+
+9) Once all share point sites are mirrored, contact - Mark, Dugan/Matt Thoburn for onboarding role mapped domain into knowledge assistant and establish connection between domain and GCS bucket with all mirrored documents.
+
+10) Provide Mark the following information before domain onboard,
+
+** User group for role mapping
+** GCS bucket name ("domain" information)
+** All Share point sites mirrored
+
+11) Once domain onboarded, perform pilot prompts/questions related to the GMPD domain/ documents and get generated answers and add it an excel file with columns "S.No", "Prompt/Question", "Manual Answer", "Generated Answer". Do a validation of generated answer against manual answer for the same question. And if the results are satisfactory send email to the user group
+
+****** COMPLETED GMPD ONBOARDING ******
