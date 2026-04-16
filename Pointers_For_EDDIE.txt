@@ -1,0 +1,27 @@
+** We have productionized our machine learning use case into production environment called EDDIE **
+
+** We name the entire MLOps pipeline as EDDIEfication of ML use case **
+
+** We are working to get a finalised SOP that explains step by step process involved in productionizing (EDDIEfication) of a ML use case **
+
+** The SOP has to be easy to understand and even a non-technical person should be able to perform EDDIEfication by going through this SOP **
+
+** Take enough time and go through attached excel sheets and below pointers and provide me a good prompt **
+
+1) We have attached three excel sheets that can be combined in order Dev --> Stage --> Prod to explain the process involved in EDDIEfication of a ML use case
+
+2) Sheet "Dev" - Explains the process involved in onboarding ML use case to "Dev" and test entire pipeline in Dev environment (Testing environment)
+
+3) Take enough time and go through the sheet "Dev" line by line in sequence and this gives you accurate story of process involved in "Dev"
+
+4) Sheet "Stage" - Explains the process involved in onboarding ML use case to "Stage" and test entire pipeline in Stage environment
+
+5) Take enough time and go through the sheet "Stage" line by line in sequence and this gives you accurate story of process involved in "Stage"
+
+6) Sheet "Prod" - Explains the process involved in onboarding ML use case to "Prod" and test entire pipeline in Prod environment
+
+7) Take enough time and go through the sheet "Prod" line by line in sequence and this gives you accurate story of process involved in "Prod"
+
+8) Once tested in "Prod" which is the final step, Send email to internal core team for successfull run of pipeline in "Prod"
+
+
